@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>C-Vu! - S'inscrire</title>
+	<link rel="stylesheet" type="text/css" href="css/maincss.css">
+</head>
+<body>
+	<a href="register.html">Inscription !</a>
+	<a href="___.html">Authentification</a>
+	<a href="tarifs.html">Tarification</a>
+	<a href="___.html">Conseils emploi</a>
+	<a href="___.html">Contact</a>
+	<a href= "CVU.html"><img src="img/CVU.png" alt="C-Vu!" id="banniere"></a>
+	<?php
+		include "decorationcommune.php";
+	?>	
+	
+	<h1>Inscription à la CVthèque <strong>C-Vu!</strong></h1>
+	<p>Vous avez fait le choix de vous inscrire ? Très bien !</p>
+	<p>Remplissez ce formulaire correctement, et que les opportunités d'emploi arrivent !</p>
+
+	<form method="post" action="includes/registering.php">
+		<p><label for="nom"><input type="text">Votre nom</label></p>
+		<p><label for="prenom"><input type="text">Votre prénom</label></p>
+		<p><label for="naissance"><input type="date">Date de naissance</label></p>
+		<p><label for="email"><input type="email">Adresse mail</label></p>
+		<p><label for="adresse"><textarea rows=3></textarea>Adresse domicile</label></p>
+		<p><label for="codepostal"><input type="text">Code postal</label></p>
+		<p><label for="ville"><input type="text">Ville</label></p>
+		<p><label for="mdpa"><input type="password">Mot de passe</label></p>
+		<p><label for="mdpb"><input type="password">Confirmez le mot de passe</label></p>
+		<p>Remarque: Privilégiez des mots de passe de plus de 8 caractères, comprenant chiffres/lettres/caractères spéciaux.</p>
+		<?php
+			include "registering.php";
+		?>
+		<p><input type="submit" id="btnSub" name="btnSub" value="Validation"> -- J'accepte les conditions d'utilisation de <strong>C-Vu!</strong>.</p>
+	</form>
+</body>
+</html>

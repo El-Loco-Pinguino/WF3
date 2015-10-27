@@ -1,0 +1,53 @@
+/* maincss.css --- S'applique à tout élément commun aux différentes pages (texte, image, disposition, etc.) */
+
+@font-face {
+	src: url(../fonts/Comfortaa_Regular.ttf);
+	font-family: "COMFORTAA";
+}
+
+body { /* Pour tout le document, sauf sélecteur plus spécifique */
+	/* Marges latérales */
+	margin-left: auto;
+	margin-right: auto;
+	width: 40em; /* Pour libérer les colonnes latérales de la page, afin d'y insérer des encarts */
+	/* Fond de couleur */
+	background-color: #DEB887; /* Couleur bois */
+	/* La police customisée sur le site */
+	font-family: "COMFORTAA";
+}
+
+#banniere {
+	margin-top: 20px;
+	display: block;
+}
+
+a { /* Les liens de haut de page */
+	display: inline;
+	color: olive;
+	font-weight: bold;
+	padding-right: 20px;
+	text-align: center;
+	width: 100px;
+}
+
+.borderleft {
+	float: left;
+	position: absolute;
+	overflow: auto;
+	top: 0;
+	left: 0;
+	background-image: url("../img/SIDEBORDER.png");
+	background-repeat: repeat-y;
+	height: 125%;
+}
+
+.borderright {
+	float: right;
+	position: absolute;
+	overflow: auto;
+	top: 0;
+	right: 0;
+	background-image: url("../img/SIDEBORDER.png");
+	background-repeat: repeat-y;
+	height: 125%;
+}

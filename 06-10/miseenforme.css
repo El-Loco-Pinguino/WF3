@@ -1,0 +1,12 @@
+/* Mise en forme conditionnelle des notes */
+td.faible {
+	background-color: red;
+}
+
+td.juste {
+	background-color: orange;
+}
+
+td.bien {
+	background-color: green;
+}
